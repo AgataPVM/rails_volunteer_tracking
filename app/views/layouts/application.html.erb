@@ -1,3 +1,4 @@
+<!-- app/views/layouts/application.html.erb -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,10 +8,19 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body><nav class="navbar navbar-expand-lg bg-body-tertiary">
+   <%= yield %>
+  <div class="container">
+    <a class="navbar-brand" href="/">Volunteers</a>
+  </div>
+</nav>
+<div class="container py-4">
+  
+</div>
+
+
+    <%= javascript_importmap_tags %>
   </body>
 </html>
